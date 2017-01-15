@@ -1,0 +1,29 @@
+version: '2.0'
+volumes:
+  gojo_dev_db:
+    driver: local
+  gojo_dev_mix_archives:
+    driver: local
+networks: {}
+services:
+  app:
+    build:
+      context: .
+    command: mix phoenix.server
+    depends_on:
+    - db
+    volumes:
+    - .:/app
+    ports:
+    - 4000:4000
+  db:
+    image: postgres:latest
+    restart: always
+    environment:
+      POSTGRES_DB: coherence_demo_dev
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_USER: postgres
+    volumes:
+    - gojo_dev_db:/var/lib/postgresql/data:rw
+    ports:
+    - 5432:5432

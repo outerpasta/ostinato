@@ -1,0 +1,18 @@
+<h2>Show suite</h2>
+
+<ul>
+
+  <li>
+    <strong>Name:</strong>
+    <%= @suite.name %>
+  </li>
+
+  <li>
+    <strong>Notes:</strong>
+    <%= @suite.notes %>
+  </li>
+
+</ul>
+
+<%= link "Edit", to: suite_path(@conn, :edit, @suite) %>
+<%= link "Back", to: suite_path(@conn, :index) %>

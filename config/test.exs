@@ -17,3 +17,6 @@ config :coherence_demo, CoherenceDemo.Repo,
   database: "coherence_demo_test",
   hostname: "localhost",
   pool: Ecto.Adapters.SQL.Sandbox
+
+config :coherence, CoherenceDemo.Coherence.Mailer,
+  adapter: Swoosh.Adapters.Test

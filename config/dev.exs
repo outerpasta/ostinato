@@ -41,3 +41,6 @@ config :coherence_demo, CoherenceDemo.Repo,
   database: "coherence_demo_dev",
   hostname: "localhost",
   pool_size: 10
+
+config :coherence, CoherenceDemo.Coherence.Mailer,
+  adapter: Swoosh.Adapters.Local

@@ -1,6 +1,8 @@
 <div class="jumbotron">
-  <h2><%= gettext "Welcome to %{name}", name: "Phoenix!" %></h2>
-  <p class="lead">A productive web framework that<br />does not compromise speed and maintainability.</p>
+  <h2><%= gettext "Welcome to %{name}", name: "Ostinato!" %></h2>
+  <p class="lead">A dead simple test management solution.</p>
+  <iframe src="https://ghbtns.com/github-btn.html?user=outerpasta&repo=ostinato&type=star&count=true&size=large&v=2" frameborder="0" scrolling="0" width="150px" height="30px"></iframe>
+  <iframe src="https://ghbtns.com/github-btn.html?user=outerpasta&repo=ostinato&type=watch&count=true&size=large&v=2" frameborder="0" scrolling="0" width="150px" height="30px"></iframe>
 </div>
 
 <div class="row marketing">

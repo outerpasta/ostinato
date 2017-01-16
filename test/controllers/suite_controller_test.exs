@@ -1,5 +1,5 @@
 defmodule Ostinato.SuiteControllerTest do
-  use Ostinato.ConnCase
+  use Ostinato.ConnCase, async: true
 
   alias Ostinato.User
   alias Ostinato.Suite

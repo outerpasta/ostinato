@@ -1,9 +1,16 @@
 defmodule Ostinato.SuiteControllerTest do
   use Ostinato.ConnCase
 
+  alias Ostinato.User
   alias Ostinato.Suite
   @valid_attrs %{name: "some content", notes: "some content"}
   @invalid_attrs %{}
+
+  setup %{conn: conn} do
+    user = User.changeset(%User{}, %{name: "test", email: "test@example.com", password: "test", password_confirmation: "test"})
+    |> Repo.insert!
+    {:ok, conn: assign(conn, :current_user, user), user: user}
+  end
 
   test "lists all entries on index", %{conn: conn} do
     conn = get conn, suite_path(conn, :index)

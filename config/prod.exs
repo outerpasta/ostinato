@@ -40,7 +40,7 @@ config :coherence,
 
 config :coherence, CoherenceDemo.Coherence.Mailer,
   adapter: Swoosh.Adapters.Mailgun,
-  api_key: System.get_env("MAILGUN_API_KEY"),
+  api_key: {:system, "MAILGUN_API_KEY"},
   domain: "mail.wla2.com"
 # %% End Coherence Configuration %%
 

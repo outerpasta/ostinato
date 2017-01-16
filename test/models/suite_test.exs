@@ -1,5 +1,5 @@
 defmodule Ostinato.SuiteTest do
-  use Ostinato.ModelCase
+  use Ostinato.ModelCase, async: true
 
   alias Ostinato.Suite
 

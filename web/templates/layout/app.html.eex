@@ -17,16 +17,13 @@
       <%= if Coherence.current_user(@conn) do %>
       <nav role="navigation">
         <ul class="nav nav-pills pull-left" style="margin-top: 0px">
-          <li><a href="/posts">Posts</a></li>
-          <li><a href="/users">Users</a></li>
+          <li><a href="/">Home</a></li>
+          <li><a href="/suites">Suites</a></li>
         </ul>
       </nav>
       <% end %>
       <ol class="breadcrumb text-right">
         <%= if Coherence.current_user(@conn) do %>
-        <%= if @conn.assigns[:remembered] do %>
-        <li style="color: red;">We remembered you</li>
-        <% end %>
         <li><%= Ostinato.Coherence.ViewHelpers.invitation_link(@conn) %></li>
         <% end %>
         <%= Ostinato.Coherence.ViewHelpers.coherence_links(@conn, :layout) %>

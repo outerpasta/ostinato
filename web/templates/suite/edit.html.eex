@@ -1,0 +1,6 @@
+<h2>Edit suite</h2>
+
+<%= render "form.html", changeset: @changeset,
+                        action: suite_path(@conn, :update, @suite) %>
+
+<%= link "Back", to: suite_path(@conn, :index) %>

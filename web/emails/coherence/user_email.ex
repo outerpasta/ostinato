@@ -1,6 +1,6 @@
 Code.ensure_loaded Phoenix.Swoosh
 
-defmodule CoherenceDemo.Coherence.UserEmail do
+defmodule Ostinato.Coherence.UserEmail do
   use Phoenix.Swoosh, view: Coherence.EmailView, layout: {Coherence.LayoutView, :email}
   alias Swoosh.Email
   require Logger

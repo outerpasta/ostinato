@@ -1,14 +1,14 @@
-defmodule CoherenceDemo.Endpoint do
-  use Phoenix.Endpoint, otp_app: :coherence_demo
+defmodule Ostinato.Endpoint do
+  use Phoenix.Endpoint, otp_app: :ostinato
 
-  socket "/socket", CoherenceDemo.UserSocket
+  socket "/socket", Ostinato.UserSocket
 
   # Serve at "/" the static files from "priv/static" directory.
   #
   # You should set gzip to true if you are running phoenix.digest
   # when deploying your static files in production.
   plug Plug.Static,
-    at: "/", from: :coherence_demo, gzip: false,
+    at: "/", from: :ostinato, gzip: false,
     only: ~w(css fonts images js favicon.ico robots.txt)
 
   # Code reloading can be explicitly enabled under the
@@ -35,8 +35,8 @@ defmodule CoherenceDemo.Endpoint do
   # Set :encryption_salt if you would also like to encrypt it.
   plug Plug.Session,
     store: :cookie,
-    key: "_coherence_demo_key",
+    key: "_ostinato_key",
     signing_salt: "/JZR3Fdu"
 
-  plug CoherenceDemo.Router
+  plug Ostinato.Router
 end

@@ -1,5 +1,5 @@
-defmodule CoherenceDemo.Router do
-  use CoherenceDemo.Web, :router
+defmodule Ostinato.Router do
+  use Ostinato.Web, :router
   use Coherence.Router         # Add this
 
   pipeline :browser do
@@ -21,24 +21,24 @@ defmodule CoherenceDemo.Router do
   end
 
   # Add this block
-  scope "/", CoherenceDemo do
+  scope "/", Ostinato do
     pipe_through :browser
     coherence_routes
   end
 
   # Add this block
-  scope "/", CoherenceDemo do
+  scope "/", Ostinato do
     pipe_through :protected
     coherence_routes :protected
   end
 
-  scope "/", CoherenceDemo do
+  scope "/", Ostinato do
     pipe_through :browser
     get "/", PageController, :index
     # Add public routes below
   end
 
-  scope "/", CoherenceDemo do
+  scope "/", Ostinato do
     pipe_through :protected
     # Add protected routes below
   end

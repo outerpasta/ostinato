@@ -1,4 +1,4 @@
-defmodule CoherenceDemo.Coherence.PasswordController do
+defmodule Ostinato.Coherence.PasswordController do
   @moduledoc """
   Handle password recovery actions.
 

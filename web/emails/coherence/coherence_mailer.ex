@@ -1,3 +1,3 @@
-defmodule CoherenceDemo.Coherence.Mailer do
+defmodule Ostinato.Coherence.Mailer do
   use Swoosh.Mailer, otp_app: :coherence
 end

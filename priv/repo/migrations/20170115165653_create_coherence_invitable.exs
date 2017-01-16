@@ -1,4 +1,4 @@
-defmodule CoherenceDemo.Repo.Migrations.CreateCoherenceInvitable do
+defmodule Ostinato.Repo.Migrations.CreateCoherenceInvitable do
   use Ecto.Migration
   def change do
     create table(:invitations) do

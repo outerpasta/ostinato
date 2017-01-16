@@ -1,4 +1,4 @@
-defmodule CoherenceDemo.Coherence.Web do
+defmodule Ostinato.Coherence.Web do
 
   def view do
     quote do
@@ -9,10 +9,10 @@ defmodule CoherenceDemo.Coherence.Web do
       # Use all HTML functionality (forms, tags, etc)
       use Phoenix.HTML
 
-      import CoherenceDemo.Router.Helpers
-      import CoherenceDemo.ErrorHelpers
-      import CoherenceDemo.Gettext
-      import CoherenceDemo.Coherence.ViewHelpers
+      import Ostinato.Router.Helpers
+      import Ostinato.ErrorHelpers
+      import Ostinato.Gettext
+      import Ostinato.Coherence.ViewHelpers
 
     end
   end

@@ -1,5 +1,5 @@
 #require IEx
-defmodule CoherenceDemo.Coherence.InvitationController do
+defmodule Ostinato.Coherence.InvitationController do
   @moduledoc """
   Handle invitation actions.
 

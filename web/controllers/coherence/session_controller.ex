@@ -1,4 +1,4 @@
-defmodule CoherenceDemo.Coherence.SessionController do
+defmodule Ostinato.Coherence.SessionController do
   @moduledoc """
   Handle the authentication actions.
 

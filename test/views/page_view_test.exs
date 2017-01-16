@@ -1,3 +1,3 @@
-defmodule CoherenceDemo.PageViewTest do
-  use CoherenceDemo.ConnCase, async: true
+defmodule Ostinato.PageViewTest do
+  use Ostinato.ConnCase, async: true
 end

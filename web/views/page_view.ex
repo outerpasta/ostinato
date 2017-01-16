@@ -1,3 +1,3 @@
-defmodule CoherenceDemo.PageView do
-  use CoherenceDemo.Web, :view
+defmodule Ostinato.PageView do
+  use Ostinato.Web, :view
 end

@@ -1,4 +1,4 @@
 defmodule Coherence.ConfirmationView do
-  use CoherenceDemo.Coherence.Web, :view
+  use Ostinato.Coherence.Web, :view
 
 end

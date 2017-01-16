@@ -1,4 +1,4 @@
-defmodule CoherenceDemo.Coherence.ConfirmationController do
+defmodule Ostinato.Coherence.ConfirmationController do
   @moduledoc """
   Handle confirmation actions.
 

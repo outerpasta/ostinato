@@ -1,5 +1,5 @@
-defmodule CoherenceDemo.PageControllerTest do
-  use CoherenceDemo.ConnCase
+defmodule Ostinato.PageControllerTest do
+  use Ostinato.ConnCase
 
   test "GET /", %{conn: conn} do
     conn = get conn, "/"

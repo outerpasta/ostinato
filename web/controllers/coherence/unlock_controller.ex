@@ -1,4 +1,4 @@
-defmodule CoherenceDemo.Coherence.UnlockController do
+defmodule Ostinato.Coherence.UnlockController do
   @moduledoc """
   Handle unlock_with_token actions.
 

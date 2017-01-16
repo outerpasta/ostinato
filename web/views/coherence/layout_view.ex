@@ -1,5 +1,5 @@
 defmodule Coherence.LayoutView do
-  use CoherenceDemo.Coherence.Web, :view
+  use Ostinato.Coherence.Web, :view
 
 
 end

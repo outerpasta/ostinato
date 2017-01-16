@@ -1,4 +1,4 @@
-defmodule CoherenceDemo.Coherence.ViewHelpers do
+defmodule Ostinato.Coherence.ViewHelpers do
   @moduledoc """
   Helper functions for Coherence Views.
   """

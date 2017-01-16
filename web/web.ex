@@ -1,12 +1,12 @@
-defmodule CoherenceDemo.Web do
+defmodule Ostinato.Web do
   @moduledoc """
   A module that keeps using definitions for controllers,
   views and so on.
 
   This can be used in your application as:
 
-      use CoherenceDemo.Web, :controller
-      use CoherenceDemo.Web, :view
+      use Ostinato.Web, :controller
+      use Ostinato.Web, :view
 
   The definitions below will be executed for every view,
   controller, etc, so keep them short and clean, focused
@@ -30,12 +30,12 @@ defmodule CoherenceDemo.Web do
     quote do
       use Phoenix.Controller
 
-      alias CoherenceDemo.Repo
+      alias Ostinato.Repo
       import Ecto
       import Ecto.Query
 
-      import CoherenceDemo.Router.Helpers
-      import CoherenceDemo.Gettext
+      import Ostinato.Router.Helpers
+      import Ostinato.Gettext
     end
   end
 
@@ -49,9 +49,9 @@ defmodule CoherenceDemo.Web do
       # Use all HTML functionality (forms, tags, etc)
       use Phoenix.HTML
 
-      import CoherenceDemo.Router.Helpers
-      import CoherenceDemo.ErrorHelpers
-      import CoherenceDemo.Gettext
+      import Ostinato.Router.Helpers
+      import Ostinato.ErrorHelpers
+      import Ostinato.Gettext
     end
   end
 
@@ -65,10 +65,10 @@ defmodule CoherenceDemo.Web do
     quote do
       use Phoenix.Channel
 
-      alias CoherenceDemo.Repo
+      alias Ostinato.Repo
       import Ecto
       import Ecto.Query
-      import CoherenceDemo.Gettext
+      import Ostinato.Gettext
     end
   end
 

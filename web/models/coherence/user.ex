@@ -1,5 +1,5 @@
-defmodule CoherenceDemo.User do
-  use CoherenceDemo.Web, :model
+defmodule Ostinato.User do
+  use Ostinato.Web, :model
   use Coherence.Schema
 
   schema "users" do

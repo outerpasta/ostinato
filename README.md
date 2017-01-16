@@ -1,4 +1,4 @@
-# CoherenceDemo
+# Ostinato
 
 To start your Phoenix app:
 

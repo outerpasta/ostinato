@@ -1,5 +1,5 @@
-defmodule CoherenceDemo.ErrorView do
-  use CoherenceDemo.Web, :view
+defmodule Ostinato.ErrorView do
+  use Ostinato.Web, :view
 
   def render("404.html", _assigns) do
     "Page not found"

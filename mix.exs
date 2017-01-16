@@ -1,8 +1,8 @@
-defmodule CoherenceDemo.Mixfile do
+defmodule Ostinato.Mixfile do
   use Mix.Project
 
   def project do
-    [app: :coherence_demo,
+    [app: :ostinato,
      version: "0.0.1",
      elixir: "~> 1.2",
      elixirc_paths: elixirc_paths(Mix.env),
@@ -17,7 +17,7 @@ defmodule CoherenceDemo.Mixfile do
   #
   # Type `mix help compile.app` for more information.
   def application do
-    [mod: {CoherenceDemo, []},
+    [mod: {Ostinato, []},
      applications: [:phoenix, :phoenix_pubsub, :phoenix_html, :cowboy, :logger, :gettext,
                     :phoenix_ecto, :postgrex, :coherence]]
   end

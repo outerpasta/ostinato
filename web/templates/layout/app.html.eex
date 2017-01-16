@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Hello CoherenceDemo!</title>
+    <title>Hello Ostinato!</title>
     <link rel="stylesheet" href="<%= static_path(@conn, "/css/app.css") %>">
   </head>
 
@@ -27,9 +27,9 @@
         <%= if @conn.assigns[:remembered] do %>
         <li style="color: red;">We remembered you</li>
         <% end %>
-        <li><%= CoherenceDemo.Coherence.ViewHelpers.invitation_link(@conn) %></li>
+        <li><%= Ostinato.Coherence.ViewHelpers.invitation_link(@conn) %></li>
         <% end %>
-        <%= CoherenceDemo.Coherence.ViewHelpers.coherence_links(@conn, :layout) %>
+        <%= Ostinato.Coherence.ViewHelpers.coherence_links(@conn, :layout) %>
       </ol>
     </header>
 

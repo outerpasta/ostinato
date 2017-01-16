@@ -43,7 +43,7 @@ defmodule Coherence.Redirects do
   """
   use Redirects
   # Uncomment the import below if adding overrides
-  # import CoherenceDemo.Router.Helpers
+  # import Ostinato.Router.Helpers
 
   # Add function overrides below
 

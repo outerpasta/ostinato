@@ -8,7 +8,7 @@ services:
     image: postgres:latest
     restart: always
     environment:
-      POSTGRES_DB: coherence_demo_dev
+      POSTGRES_DB: ostinato_dev
       POSTGRES_PASSWORD: postgres
       POSTGRES_USER: postgres
     volumes:

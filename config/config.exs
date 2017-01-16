@@ -6,15 +6,15 @@
 use Mix.Config
 
 # General application configuration
-config :coherence_demo,
-  ecto_repos: [CoherenceDemo.Repo]
+config :ostinato,
+  ecto_repos: [Ostinato.Repo]
 
 # Configures the endpoint
-config :coherence_demo, CoherenceDemo.Endpoint,
+config :ostinato, Ostinato.Endpoint,
   url: [host: "localhost"],
   secret_key_base: "o0BIFCyDa8+igc/fWyaV+MW78rwJWYOSGpbv8K4PipyB1JYaXCj2dJW1oP1pKDZE",
-  render_errors: [view: CoherenceDemo.ErrorView, accepts: ~w(html json)],
-  pubsub: [name: CoherenceDemo.PubSub,
+  render_errors: [view: Ostinato.ErrorView, accepts: ~w(html json)],
+  pubsub: [name: Ostinato.PubSub,
            adapter: Phoenix.PubSub.PG2]
 
 # Configures Elixir's Logger
@@ -24,9 +24,9 @@ config :logger, :console,
 
 # %% Coherence Configuration %%   Don't remove this line
 config :coherence,
-  user_schema: CoherenceDemo.User,
-  repo: CoherenceDemo.Repo,
-  module: CoherenceDemo,
+  user_schema: Ostinato.User,
+  repo: Ostinato.Repo,
+  module: Ostinato,
   logged_out_url: "/",
   email_from_name: "admin",
   email_from_email: "admin@example.com",

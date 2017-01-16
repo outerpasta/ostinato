@@ -1,3 +1,3 @@
-defmodule CoherenceDemo.LayoutViewTest do
-  use CoherenceDemo.ConnCase, async: true
+defmodule Ostinato.LayoutViewTest do
+  use Ostinato.ConnCase, async: true
 end

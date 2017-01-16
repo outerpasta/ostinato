@@ -1,4 +1,4 @@
-defmodule CoherenceDemo.ErrorHelpers do
+defmodule Ostinato.ErrorHelpers do
   @moduledoc """
   Conveniences for translating and building error messages.
   """
@@ -32,9 +32,9 @@ defmodule CoherenceDemo.ErrorHelpers do
     #     dgettext "errors", "is invalid"
     #
     if count = opts[:count] do
-      Gettext.dngettext(CoherenceDemo.Gettext, "errors", msg, msg, count, opts)
+      Gettext.dngettext(Ostinato.Gettext, "errors", msg, msg, count, opts)
     else
-      Gettext.dgettext(CoherenceDemo.Gettext, "errors", msg, opts)
+      Gettext.dgettext(Ostinato.Gettext, "errors", msg, opts)
     end
   end
 end

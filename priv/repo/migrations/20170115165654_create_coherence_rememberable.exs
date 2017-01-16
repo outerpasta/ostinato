@@ -1,4 +1,4 @@
-defmodule CoherenceDemo.Repo.Migrations.CreateCoherenceRememberable do
+defmodule Ostinato.Repo.Migrations.CreateCoherenceRememberable do
   use Ecto.Migration
   def change do
     create table(:rememberables) do

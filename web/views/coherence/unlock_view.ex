@@ -1,5 +1,5 @@
 defmodule Coherence.UnlockView do
-  use CoherenceDemo.Coherence.Web, :view
+  use Ostinato.Coherence.Web, :view
 
 
 end

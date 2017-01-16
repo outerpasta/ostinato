@@ -22,6 +22,17 @@ config :logger, :console,
   format: "$time $metadata[$level] $message\n",
   metadata: [:request_id]
 
+# %% Coherence Configuration %%   Don't remove this line
+config :coherence,
+  user_schema: CoherenceDemo.User,
+  repo: CoherenceDemo.Repo,
+  module: CoherenceDemo,
+  logged_out_url: "/",
+  email_from_name: "admin",
+  email_from_email: "admin@example.com",
+  opts: [:rememberable, :invitable, :confirmable, :trackable, :unlockable_with_token, :lockable, :recoverable, :authenticatable]
+# %% End Coherence Configuration %%
+
 # Import environment specific config. This must remain at the bottom
 # of this file so it overrides the configuration defined above.
 import_config "#{Mix.env}.exs"

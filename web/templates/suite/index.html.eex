@@ -1,0 +1,28 @@
+<h2>Listing suites</h2>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Notes</th>
+
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+<%= for suite <- @suites do %>
+    <tr>
+      <td><%= suite.name %></td>
+      <td><%= suite.notes %></td>
+
+      <td class="text-right">
+        <%= link "Show", to: suite_path(@conn, :show, suite), class: "btn btn-default btn-xs" %>
+        <%= link "Edit", to: suite_path(@conn, :edit, suite), class: "btn btn-default btn-xs" %>
+        <%= link "Delete", to: suite_path(@conn, :delete, suite), method: :delete, data: [confirm: "Are you sure?"], class: "btn btn-danger btn-xs" %>
+      </td>
+    </tr>
+<% end %>
+  </tbody>
+</table>
+
+<%= link "New suite", to: suite_path(@conn, :new) %>

@@ -41,6 +41,7 @@ defmodule Ostinato.Router do
   scope "/", Ostinato do
     pipe_through :protected
     # Add protected routes below
+    resources "/suites", SuiteController
   end
 end
 

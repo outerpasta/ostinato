@@ -1,4 +1,4 @@
-# Ostinato
+# Ostinato [![Build Status](https://travis-ci.org/outerpasta/ostinato.svg?branch=master)](https://travis-ci.org/outerpasta/ostinato)
 
 To start your Phoenix app:
 

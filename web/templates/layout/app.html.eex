@@ -12,7 +12,7 @@
   </head>
 
 <body>
-  <div class="container">
+  <div class="container-fluid">
     <header class="header" style="padding-top: 15px">
       <%= if Coherence.current_user(@conn) do %>
       <nav role="navigation">

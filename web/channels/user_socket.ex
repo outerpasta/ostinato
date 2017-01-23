@@ -3,6 +3,7 @@ defmodule Ostinato.UserSocket do
 
   ## Channels
   # channel "room:*", Ostinato.RoomChannel
+  channel "room:lobby", Ostinato.RoomChannel
 
   ## Transports
   transport :websocket, Phoenix.Transports.WebSocket, timeout: 45_000

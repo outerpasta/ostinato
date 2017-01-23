@@ -1,1 +1,15 @@
 /* This file is for your main application css. */
+.div-clown-scene
+{
+    background: url('../images/bokeh.jpg') no-repeat center center;
+}
+
+.div-clown-scene h2
+{
+    color: white;
+}
+
+.div-clown-scene p
+{
+    color: white;
+}
